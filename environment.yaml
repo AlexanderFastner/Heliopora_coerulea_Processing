@@ -1,4 +1,4 @@
-name: Helipora
+name: Heliopora
 channels:
   - defaults
 dependencies:
@@ -10,4 +10,4 @@ dependencies:
       - pandas==1.5.2
       - matplotlib==3.5.2
       - jupyterlab
-prefix: ~/anaconda/envs/Helipora
+prefix: ~/anaconda/envs/Heliopora
