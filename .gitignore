@@ -1,2 +1,5 @@
 plots/
 final.p_ctg.fasta
+data/
+out_dir/
+.ipynd_checkpoints/
