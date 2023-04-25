@@ -10,4 +10,5 @@ dependencies:
       - pandas==1.5.2
       - matplotlib==3.5.2
       - jupyterlab
+      - scikit-learn
 prefix: ~/anaconda/envs/Heliopora
