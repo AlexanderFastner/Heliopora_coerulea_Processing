@@ -11,4 +11,5 @@ dependencies:
       - matplotlib==3.5.2
       - jupyterlab
       - scikit-learn
+      - chardet
 prefix: ~/anaconda/envs/Heliopora
