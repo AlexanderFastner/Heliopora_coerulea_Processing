@@ -1,4 +1,4 @@
-name: Heliopora
+name: Helipora
 channels:
   - defaults
 dependencies:
@@ -12,4 +12,5 @@ dependencies:
       - jupyterlab
       - scikit-learn
       - chardet
+      - notebook
 prefix: ~/anaconda/envs/Heliopora
