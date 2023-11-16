@@ -4,7 +4,7 @@ This notebook will help you Separate and clean your Biological data using GC con
 
 ## Contents
 
-[1. Get GC content from contigs and in chunk sizes, then visualize both](#get-gc-content-from-contigs-and-in-chunk-sizes, then-visualize-both)\
+[1. Get GC content from contigs and in chunk sizes, then visualize both](#1)\
 2. Get coverage for contigs and in chunk sizes, then visualize both\
 3. Histogram of contig lengths\
 4. Blob plot (gc vs average coverage) for both\
@@ -18,7 +18,9 @@ This notebook will help you Separate and clean your Biological data using GC con
 
 # Overview
 
+<a name="1">
 #### 1. Get GC content from contigs and in chunk sizes, then visualize both
+</a>
 ![GC Content](https://github.com/AlexanderFastner/Heliopora_coerulea_Processing/blob/main/images/GC_content_000032.png?raw=true)\
 #### 2. Get coverage for contigs and in chunk sizes, then visualize both 
 ![GC Content](https://github.com/AlexanderFastner/Heliopora_coerulea_Processing/blob/main/images/Coverage_000032.png?raw=true)\
@@ -29,7 +31,7 @@ This notebook will help you Separate and clean your Biological data using GC con
 #### 5. Kmeans clustering 
 ![Kmeans](https://github.com/AlexanderFastner/Heliopora_coerulea_Processing/blob/main/images/Kmeans_clustering.png?raw=true)\
 #### 6. Take cluster from kmeans as input to Blast_script
-#### 7. get concencus classification for each contig
+#### 7. Get concencus classification for each contig
 #### 8. Blob plot again and mark points that had accurate blast hits
 ![Fasta Blob](https://github.com/AlexanderFastner/Heliopora_coerulea_Processing/blob/main/images/Fasta_Blob.png?raw=true)\
 #### 9. Histogram for length distribution
@@ -57,9 +59,9 @@ python -m ipykernel install --user --name=Heliopora
 jupyter notebook
 
 ### general run
-Start with gc_vs_coverage\
-Parameters are at the top with info.\
-After Blob plot add target cluster manually to target_cluster variable! default is 1 but that might not always be correct\
-<b>Run Blast with Blast_script.sh</b>\
-Finish the fasta clustering at the bottom of gc_vs_coverage
+1. Start with gc_vs_coverage\
+2. Parameters are at the top with info.\
+3. After Blob plot add target cluster manually to target_cluster variable! default is 1 but that might not always be correct\
+<b>4. Run Blast with Blast_script.sh</b>\
+5. Finish the fasta clustering at the bottom of gc_vs_coverage
 
