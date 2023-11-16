@@ -1,27 +1,26 @@
-# Helipora_coerulea_Processing
-Separating and cleaning data using GC content, Coverage, and intervaled BLAST to cluster, identify, and annotate PacBio coral contigs
+# Heliopora_coerulea_Processing
+This notebook will help you Separate and clean your Biological data using GC content, Coverage, and intervaled BLAST to cluster, identify, and annotate long (PacBio) Contigs
 
 # Overview
 
 1. Get GC content from contigs and in chunk sizes, then visualize both
 
 2. Get coverage for contigs and in chunk sizes, then visualize both 
+
 3. Histogram of contig lengths
+
 4. Blob plot (gc vs average coverage) for both
+![Test](https://github.com/AlexanderFastner/Heliopora_coerulea_Processing/master/images/Blob.png?raw=true)
 5. Kmeans clustering
-6. Take cluster from kmeans as input to blast
-7. Blob plot again and mark points that had accurate blast hits
-8. Histogram for length distribution
-9. Take contigs starting with largest up til genome size
-10. Add contig ids to fasta file
 
+6. Take cluster from kmeans as input to Blast_script
+7. get concencus classification for each contig
+8. Blob plot again and mark points that had accurate blast hits
 
+9. Histogram for length distribution
 
-
-
-
-
-
+10. Take contigs starting with largest up til genome size
+11. Add contig ids to fasta file for annotation
 
 
 ## Quickstart guide
@@ -42,8 +41,10 @@ python -m ipykernel install --user --name=Heliopora
 ### Open notebook
 jupyter notebook
 
-### general
+### general run
 Start with gc_vs_coverage
 Parameters are at the top with info.
-After Blob plot add target cluster manually to target_cluster variable
-Temporarily the blast step is not integrated yet, so run Blast, then blast_results, then finish the fasta clustering at the bottom of gc_vs_coverage
+After Blob plot add target cluster manually to target_cluster variable! default is 1 but that might not always be correct
+!Run Blast! with Blast_script.sh
+Finish the fasta clustering at the bottom of gc_vs_coverage
+

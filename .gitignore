@@ -3,5 +3,3 @@ out_dir/
 backup_out_dir/
 data/
 100kb_subset_data/
-ourGenome.fasta
-backup_ourGenome.fasta
