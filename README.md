@@ -3,24 +3,24 @@ This notebook will help you Separate and clean your Biological data using GC con
 
 # Overview
 
-[1. Get GC content from contigs and in chunk sizes, then visualize both](#1.-Get-GC-content-from-contigs-and-in-chunk-sizes, then-visualize-both) 
-2. Get coverage for contigs and in chunk sizes, then visualize both 
-3. Histogram of contig lengths 
-4. Blob plot (gc vs average coverage) for both 
-5. Kmeans clustering 
-6. Take cluster from kmeans as input to Blast_script 
-7. get concencus classification for each contig 
-8. Blob plot again and mark points that had accurate blast hits 
-9. Histogram for length distribution 
-10. Take contigs starting with largest up til genome size 
-11. Add contig ids to fasta file for annotation 
+[1. Get GC content from contigs and in chunk sizes, then visualize both](#1.-Get-GC-content-from-contigs-and-in-chunk-sizes, then-visualize-both)\
+2. Get coverage for contigs and in chunk sizes, then visualize both\
+3. Histogram of contig lengths\
+4. Blob plot (gc vs average coverage) for both
+5. Kmeans clustering
+6. Take cluster from kmeans as input to Blast_script
+7. get concencus classification for each contig
+8. Blob plot again and mark points that had accurate blast hits
+9. Histogram for length distribution
+10. Take contigs starting with largest up til genome size
+11. Add contig ids to fasta file for annotation
 
 
 
 #### 1. Get GC content from contigs and in chunk sizes, then visualize both
-![GC Content](https://github.com/AlexanderFastner/Heliopora_coerulea_Processing/blob/main/images/GC_content_000032.png?raw=true)
+![GC Content](https://github.com/AlexanderFastner/Heliopora_coerulea_Processing/blob/main/images/GC_content_000032.png?raw=true)\
 #### 2. Get coverage for contigs and in chunk sizes, then visualize both 
-![GC Content](https://github.com/AlexanderFastner/Heliopora_coerulea_Processing/blob/main/images/Coverage_000032.png?raw=true)
+![GC Content](https://github.com/AlexanderFastner/Heliopora_coerulea_Processing/blob/main/images/Coverage_000032.png?raw=true)\
 #### 3. Histogram of contig lengths
 ![Histogram of contig lengths](https://github.com/AlexanderFastner/Heliopora_coerulea_Processing/blob/main/images/Histogram_of_lengths.png?raw=true)
 4. Blob plot (gc vs average coverage) for both
@@ -56,13 +56,9 @@ python -m ipykernel install --user --name=Heliopora
 jupyter notebook
 
 ### general run
-Start with gc_vs_coverage
-
-Parameters are at the top with info.
-
-After Blob plot add target cluster manually to target_cluster variable! default is 1 but that might not always be correct
-
-<b>Run Blast with Blast_script.sh<b>
-
+Start with gc_vs_coverage\
+Parameters are at the top with info.\
+After Blob plot add target cluster manually to target_cluster variable! default is 1 but that might not always be correct\
+<b>Run Blast with Blast_script.sh<\b>\
 Finish the fasta clustering at the bottom of gc_vs_coverage
 
