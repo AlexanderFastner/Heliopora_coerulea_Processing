@@ -5,16 +5,43 @@ This notebook will help you Separate and clean your Biological data using GC con
 ## Contents
 
 [1. Get GC content from contigs and in chunk sizes, then visualize both](#1-get-gc-content-from-contigs-and-in-chunk-sizes-then-visualize-both)\
-2. Get coverage for contigs and in chunk sizes, then visualize both\
-3. Histogram of contig lengths\
-4. Blob plot (gc vs average coverage) for both\
-5. Kmeans clustering\
-6. Take cluster from kmeans as input to Blast_script\
-7. get concencus classification for each contig\
-8. Blob plot again and mark points that had accurate blast hits\
-9. Histogram for length distribution\
-10. Take contigs starting with largest up til genome size\
-11. Add contig ids to fasta file for annotation\
+[2. Get coverage for contigs and in chunk sizes, then visualize both](2-get-coverage-for-contigs-and-in-chunk-sizes-then-visualize-both)\
+[3. Histogram of contig lengths](3-histogram-of-contig-lengths)\
+[4. Blob plot (gc vs average coverage) for both](4-blob-plot-gc-vs-average-coverage-for-both)\
+[5. Kmeans clustering](5-kmeans-clustering)\
+[6. Take cluster from kmeans as input to Blast_script](6-take-cluster-from-kmeans-as-input-to-blast_script)\
+[7. get concencus classification for each contig](7-get-concencus-classification-for-each-contig)\
+[8. Blob plot again and mark points that had accurate blast hits](8-blob-plot-again-and-mark-points-that-had-accurate-blast-hits)\
+[9. Histogram for length distribution](9-histogram-for-length-distribution)\
+[10. Take contigs starting with largest up til genome size](10-take-contigs-starting-with-largest-up-til-genome-size)\
+[11. Add contig ids to fasta file for annotation](11-add-contig-ids-to-fasta-file-for-annotation)\
+
+
+## Quickstart guide
+Follow these steps to get started and run this notebook
+
+### Setup conda
+setup your favorite conda (anaconda, miniconda...)
+
+### Create conda env
+conda env create -f environment.yml
+
+### Activate conda env
+conda activate Heliopora
+
+### Add conda env to jupyter notebook
+python -m ipykernel install --user --name=Heliopora
+
+### Open notebook
+jupyter notebook
+
+### general run
+1. Start with gc_vs_coverage  
+2. Parameters are at the top with info.  
+3. After Blob plot add target cluster manually to target_cluster variable! default is 1 but that might not always be correct  
+4. <b> Run Blast with Blast_script.sh</b>  
+5. Finish the fasta clustering at the bottom of gc_vs_coverage  
+6. Continue your Analysis with filtered results :)
 
 # Overview
 
@@ -38,28 +65,4 @@ This notebook will help you Separate and clean your Biological data using GC con
 #### 11. Add contig ids to fasta file for annotation
 
 
-## Quickstart guide
-Follow these steps to get started and run this notebook
-
-### Setup conda
-setup your favorite conda (anaconda, miniconda...)
-
-### Create conda env
-conda env create -f environment.yml
-
-### Activate conda env
-conda activate Heliopora
-
-### Add conda env to jupyter notebook
-python -m ipykernel install --user --name=Heliopora
-
-### Open notebook
-jupyter notebook
-
-### general run
-1. Start with gc_vs_coverage\
-2. Parameters are at the top with info.\
-3. After Blob plot add target cluster manually to target_cluster variable! default is 1 but that might not always be correct\
-4. <b> Run Blast with Blast_script.sh</b>\
-5. Finish the fasta clustering at the bottom of gc_vs_coverage
 
