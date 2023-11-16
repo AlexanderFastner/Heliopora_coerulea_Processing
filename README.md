@@ -4,17 +4,17 @@ This notebook will help you Separate and clean your Biological data using GC con
 
 ## Contents
 
- - [1. Get GC content from contigs and in chunk sizes, then visualize both](#1.-get-gc-content-from-contigs-and-in-chunk-sizes, then-visualize-both)\
- - 2. Get coverage for contigs and in chunk sizes, then visualize both\
- - 3. Histogram of contig lengths\
- - 4. Blob plot (gc vs average coverage) for both\
- - 5. Kmeans clustering\
- - 6. Take cluster from kmeans as input to Blast_script\
- - 7. get concencus classification for each contig\
- - 8. Blob plot again and mark points that had accurate blast hits\
- - 9. Histogram for length distribution\
- - 10. Take contigs starting with largest up til genome size\
- - 11. Add contig ids to fasta file for annotation\
+[1. Get GC content from contigs and in chunk sizes, then visualize both](#get-gc-content-from-contigs-and-in-chunk-sizes, then-visualize-both)\
+2. Get coverage for contigs and in chunk sizes, then visualize both\
+3. Histogram of contig lengths\
+4. Blob plot (gc vs average coverage) for both\
+5. Kmeans clustering\
+6. Take cluster from kmeans as input to Blast_script\
+7. get concencus classification for each contig\
+8. Blob plot again and mark points that had accurate blast hits\
+9. Histogram for length distribution\
+10. Take contigs starting with largest up til genome size\
+11. Add contig ids to fasta file for annotation\
 
 # Overview
 
