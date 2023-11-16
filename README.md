@@ -3,7 +3,7 @@ This notebook will help you Separate and clean your Biological data using GC con
 
 # Overview
 
-[1. Get GC content from contigs and in chunk sizes, then visualize both](#1. Get GC content from contigs and in chunk sizes, then visualize both) 
+[1. Get GC content from contigs and in chunk sizes, then visualize both](#1.-Get-GC-content-from-contigs-and-in-chunk-sizes, then-visualize-both) 
 2. Get coverage for contigs and in chunk sizes, then visualize both 
 3. Histogram of contig lengths 
 4. Blob plot (gc vs average coverage) for both 
